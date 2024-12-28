@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+
+}
+.Header{
+    position: sticky;
+    top: 0;
+}
+header {
+   /* background: linear-gradient(to right, #120d0b, #44260d);*/
+    background-image: url("pictures/header.jpg");
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+header img { 
+    height: 150px;
+    border-radius: 100%;
+}
+header h1{
+    font-size:60px;
+    font-family: Georgia;
+}
+nav {
+    background-color: #383e44;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+nav ul li a:hover {
+    color: orangered;
+    transition: 0.5s;
+}
+
+/* Dash Board Styles */
+/* Dash Board Styles */
+/* Dash Board Styles */
+
+.container {
+    display: flex;
+    flex-wrap:unset;
+    padding: 20px;
+}
+.about-section {
+    display: flex;
+    flex-direction: row;
+    background-color:beige;
+    text-align: justify;
+    align-items: flex-start;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    line-height:1cm;
+    box-shadow: 10px 2px 5px rgba(138, 51, 51, 0.2);
+}
+.about-section img {
+    max-width: 50%;
+    height:auto;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-right:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px rgba(6, 1, 1, 0.1);
+}
+
+.img:hover{
+    transform: scale(1.1);
+    transition-delay: 0.1s;
+}
+
+.about-section h2 {
+    color: #066e79;
+}
+footer {
+    background-color: #191a1c;
+    color:orangered;
+    text-align: center;
+    padding: 3px;
+    margin-top: 25px;
+}
+
+
+/* Players Styles*/
+/* Players Styles*/
+/* Players Styles*/
+
+.heading{
+    font-family: Georgia;
+    letter-spacing: 12px;
+    font-size: 12px;
+    color:rgb(234, 231, 231);
+    text-align: center;
+    background-color:#383e44;
+    padding: 10px;
+    top: 209px;
+    position: sticky;
+}
+
+.imgSection{
+    margin:30px 20px 30px 20px;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.imgBlock{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-content: center;
+
+}
+.imgp{
+    width:auto;
+    height:300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(6, 1, 1, 0.1);
+}
+
+.image{
+    display:flex;
+    flex-direction: column;
+
+}
+.Pdtls{
+    font-family: Georgia;
+    font-size: 20px;
+    text-align: center;
+    background-color: #191a1c;
+    color: aliceblue;
+    padding:15px;
+    border-radius: 10px;
+    line-height:30px;
+}
+.image,.Pdtls{
+    margin: 1px;
+    padding: 0;
+}
+@media (max-width: 850px){
+    header {
+        flex-direction:row;
+    }
+    header img {
+        height: 50px;
+    }
+    header h1 {
+        font-size: 25px;
+
+    }
+    nav{
+        padding-top:10px;
+        padding-bottom: 0px;
+    }
+    nav ul {
+        flex-direction:row;
+    }
+    nav ul li {
+        font-size: 10px;
+    }
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-section img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+    .imgBlock {
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+    }
+    .heading,nav{
+        background-color: rgb(58, 56, 56);
+        margin:0;   
+    }
+    .heading{
+        font-size: 10px;
+        color: wheat;
+        padding: 10px;
+        position: sticky;
+        top: 112px;
+        position: sticky;
+    }
+    }
+    .imgp {
+        max-height: 400px;
+    }
+    .Pdtls {
+        font-size: 18px;
+    }
+    .matchTable {
+        width: 100%;
+    }
+
+/*Syle for Matches*/
+/*Syle for Matches*/
+/*Syle for Matches*/
+
+.matchHeading {
+    font-family:Georgia;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0,5px,0;
+}
+
+.tableContainer {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.matchTable {
+    border-collapse: collapse;
+    width: 80%;
+    background-color: #fcf0f0; 
+    margin: 0 auto;
+}
+
+.matchTable tbody {
+    display: block; 
+    max-height: 300px; 
+    overflow-y: auto; 
+    width: 100%; 
+}
+
+.matchTable thead {
+    display: table;
+    width: 100%; 
+    table-layout: fixed;
+}
+
+.matchTable tr {
+    display: table;
+    width: 100%; 
+    table-layout: fixed;
+}
+
+.matchTable th, .matchTable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+.matchTable th {
+    background-color: #252825; 
+    color:orangered; 
+    font-weight: bold;
+    position: sticky; 
+    top: 0;
+    z-index:2; 
+}
+
+.matchTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.match-result {
+    font-weight: bold;
+}
+
+.match-result.win {
+    color: green;
+}
+
+.match-result.loss {
+    color: red;
+}
+
+.match-result.draw {
+    color: orange;
+}
+
+@media (max-width: 850px){
+
+    .matchHeading {
+        font-family:Georgia;
+        font-size: 10px;
+        text-align: center;
+        margin: 20px 0,5px,0;
+    }
+
+    .matchTable th {
+        background-color: #252825; 
+        color:orangered; 
+        font-weight: bold;
+        position: sticky; 
+        top: 0;
+        z-index:2;
+        font-size: 10px; 
+    }
+    .matchTable tr {
+        display: table;
+        width: 100%; 
+        table-layout: fixed;
+        font-size: 10px;
+    }
+    .tableContainer {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-bottom: 80px;
+    }
+
+    
+}
