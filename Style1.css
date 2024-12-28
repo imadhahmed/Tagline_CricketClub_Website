@@ -13,12 +13,12 @@ header {
    /* background: linear-gradient(to right, #120d0b, #44260d);*/
     background-image: url("pictures/header.jpg");
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:20px;
+    gap:10px;
 }
 header img { 
     height: 150px;
