@@ -176,7 +176,7 @@ footer {
         padding-bottom: 0px;
     }
     nav ul {
-        flex-direction:row;
+        flex-direction: row;
     }
     nav ul li {
         font-size: 10px;
