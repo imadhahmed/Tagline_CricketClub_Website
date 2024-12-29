@@ -206,7 +206,7 @@ footer {
         top: 116px;
         position: sticky;
     }
-    }
+
     .imgp {
         max-height: 400px;
     }
@@ -216,6 +216,8 @@ footer {
     .matchTable {
         width: 100%;
     }
+    }
+   
 
 /*Syle for Matches*/
 /*Syle for Matches*/
