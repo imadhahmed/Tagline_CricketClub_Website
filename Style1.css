@@ -160,7 +160,7 @@ footer {
     margin: 1px;
     padding: 0;
 }
-@media (max-width: 850px){
+@media (max-width: 850px) {
     header {
         flex-direction:row;
     }
@@ -224,8 +224,8 @@ footer {
         padding: 0;
         overflow-x:scroll;
         scrollbar-width: none;
-      
     }
+}
    
 
 /*Syle for Matches*/
@@ -338,6 +338,6 @@ footer {
         margin-bottom: 50px;
 
     }
+}
 
     
-}
