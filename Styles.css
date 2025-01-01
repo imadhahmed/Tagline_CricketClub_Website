@@ -322,3 +322,20 @@ footer {
     position: sticky;
     margin-bottom: 10px;
 }
+
+
+/*Style for Join Us*/
+
+.JoinHead {
+    font-family: Georgia;
+    letter-spacing: 12px;
+    font-size: 15px;
+    color:rgb(234, 207, 133);
+    text-align: center;
+    background-color:#383e44;
+    padding-top:6px;
+    padding-bottom: 2px;
+    top: 185px;
+    position: sticky;
+    margin-bottom: 10px;
+}
