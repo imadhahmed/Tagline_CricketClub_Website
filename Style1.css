@@ -10,7 +10,6 @@ body {
     top: 0;
 }
 header {
-   /* background: linear-gradient(to right, #120d0b, #44260d);*/
     background-image: url("pictures/header.jpg");
     color: white;
     padding: 10px 10px;
@@ -27,7 +26,7 @@ header img {
 header h1{
     font-size:50px;
     font-family: Georgia;
-}
+} 
 nav {
     background-color: #383e44;
     padding: 10px 20px;
