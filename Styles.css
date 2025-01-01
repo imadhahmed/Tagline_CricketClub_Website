@@ -153,77 +153,24 @@ footer {
     margin: 1px;
     padding: 0;
 }
-@media (max-width: 850px) {
-    header {
-        flex-direction:row;
-    }
-    header img {
-        height: 50px;
-    }
-    header h1 {
-        font-size: 25px;
 
-    }
-    .nav{
-        list-style-type: none;
-        display: flex;
-        justify-content:center;
-        overflow-x:scroll;
-        scrollbar-width: none;
-        margin: 0;
-        padding: 0;
-    }
-    .nav li {
-        font-size: 10px;
-    }
-    .about-section {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-section img {
-        max-width: 100%;
-        margin: 10px 0;
-    }
-    .imgBlock {
-        flex-direction: column;
-        width: 300px;
-        height: auto;
-    }
-    .heading,nav{
-        background-color: rgb(58, 56, 56);
-        margin:0;   
-    }
-    .heading{
-        font-size: 10px;
-        color: wheat;
-        padding: 10px;
-        position: sticky;
-        top: 116px;
-        position: sticky;
-    }
-
-    .imgp {
-        max-height: 400px;
-    }
-    .Pdtls {
-        font-size: 18px;
-    }
-    .matchTable {
-        width: 100%;
-    }
-   
-}
-   
 
 /*Syle for Matches*/
 /*Syle for Matches*/
 /*Syle for Matches*/
 
 .matchHeading {
-    font-family:Georgia;
-    font-size: 25px;
+    font-family: Georgia;
+    letter-spacing: 12px;
+    font-size: 15px;
+    color:rgb(234, 207, 133);
     text-align: center;
-    margin: 20px 0,5px,0;
+    background-color:#383e44;
+    padding-top:6px;
+    padding-bottom: 2px;
+    top: 185px;
+    position: sticky;
+    margin-bottom: 10px;
 }
 
 .tableContainer {
@@ -294,39 +241,3 @@ footer {
 .match-result.draw {
     color: orange;
 }
-
-@media (max-width: 850px){
-
-    .matchHeading {
-        font-family:Georgia;
-        font-size: 10px;
-        text-align: center;
-        margin: 20px 0,5px,0;
-    }
-
-    .matchTable th {
-        background-color: #252825; 
-        color:orangered; 
-        font-weight: bold;
-        position: sticky; 
-        top: 0;
-        z-index:2;
-        font-size: 10px; 
-    }
-    .matchTable tr {
-        display: table;
-        width: 100%; 
-        table-layout: fixed;
-        font-size: 10px;
-    }
-    .tableContainer {
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        height: auto;
-        margin-bottom: 20px;
-
-    }
-}
-
-    
