@@ -8,6 +8,7 @@ body {
 .Header{
     position: sticky;
     top: 0;
+    display:block;
 }
 header {
     background-image: url("pictures/header.jpg");
@@ -181,7 +182,7 @@ footer {
 
 .matchTable {
     border-collapse: collapse;
-    width: 900%;
+    width: 95%;
     background-color: #fcf0f0; 
     margin: 0 auto;
 }
