@@ -22,7 +22,7 @@
         justify-content:baseline;
         margin: 0;
         padding: 0;
-        overflow-x:scroll;
+        overflow-wrap: normal;
         scrollbar-width: none;
     }
     nav ul li {
