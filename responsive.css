@@ -1,5 +1,4 @@
-
-/*Style for Players*/
+/*Common Style*/
 
 @media (max-width: 768px) {
     header {
@@ -47,6 +46,8 @@
         top: 116px;
         position: sticky;
     }
+
+    /*Style for Players*/
 
     .imgp {
         max-height: 400px;
