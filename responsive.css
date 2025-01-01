@@ -14,9 +14,10 @@
     nav{
         padding-top:10px;
         padding-bottom: 0px;
+        flex-wrap: nowrap;
     }
     nav ul {
-        flex-direction: row;
+        flex-direction:row;
     }
     nav ul li {
         font-size: 10px;
