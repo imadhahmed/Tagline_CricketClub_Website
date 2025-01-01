@@ -164,11 +164,7 @@ footer {
         font-size: 25px;
 
     }
-    nav{
-        padding-top:10px;
-        padding-bottom: 0px;
-    }
-    nav ul {
+    .teamNameWithLogo{
         list-style-type: none;
         display: flex;
         justify-content:center;
@@ -177,7 +173,7 @@ footer {
         margin: 0;
         padding: 0;
     }
-    nav ul li {
+    .teamNameWithLogo li {
         font-size: 10px;
     }
     .about-section {
@@ -234,6 +230,7 @@ footer {
     display: flex; 
     justify-content: center; 
     align-items: center; 
+    height: auto;
 }
 
 .matchTable {
@@ -326,7 +323,8 @@ footer {
         display: flex; 
         justify-content: center; 
         align-items: center; 
-        margin-bottom: 50px;
+        height: auto;
+        margin-bottom: 20px;
 
     }
 }
