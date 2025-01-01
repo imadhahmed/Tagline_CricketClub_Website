@@ -160,7 +160,7 @@ footer {
     margin: 1px;
     padding: 0;
 }
-@media (max-width: 850px) {
+@media (max-width: 768px) {
     header {
         flex-direction:row;
     }
@@ -307,7 +307,7 @@ footer {
     color: orange;
 }
 
-@media (max-width: 850px){
+@media (max-width: 768x){
 
     .matchHeading {
         font-family:Georgia;
