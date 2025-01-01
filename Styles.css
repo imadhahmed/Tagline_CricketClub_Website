@@ -179,6 +179,8 @@ footer {
         list-style-type: none;
         display: flex;
         justify-content:center;
+        overflow-x:scroll;
+        scrollbar-width: none;
         margin: 0;
         padding: 0;
     }
@@ -220,15 +222,7 @@ footer {
     .matchTable {
         width: 100%;
     }
-    nav ul {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        overflow-x:scroll;
-        scrollbar-width: none;
-    }
+   
 }
    
 
