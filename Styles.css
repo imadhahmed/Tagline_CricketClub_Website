@@ -9,8 +9,7 @@ body {
     position: sticky;
     top: 0;
 }
-header {
-   /* background: linear-gradient(to right, #120d0b, #44260d);*/
+.teamNameWithLogo{
     background-image: url("pictures/header.jpg");
     color: white;
     padding: 10px 10px;
@@ -20,48 +19,42 @@ header {
     justify-content: center;
     gap:10px;
 }
-header img { 
+.teamNameWithLogo img { 
     height: 100px;
     border-radius: 100%;
 }
-header h1{
+.teamNameWithLogo h1{
     font-size:50px;
     font-family: Georgia;
 }
-nav {
-    background-color: #383e44;
-    padding: 10px 20px;
-}
-nav ul {
+
+.nav {
     list-style-type: none;
     display: flex;
     justify-content:center;
     margin: 0;
-    padding: 0;
+    padding: 0; background-color: #383e44;
+    padding: 10px 20px;
 }
-nav ul li {
+.nav li {
     margin: 0 20px;
 }
-nav ul li a {
+.nav li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-family: 'Segoe UI';
 }
-nav ul li a:hover {
+.nav li a:hover {
     color: orangered;
     transition: 0.5s;
 }
 
+
 /* Dash Board Styles */
 /* Dash Board Styles */
 /* Dash Board Styles */
 
-.container {
-    display: flex;
-    flex-wrap:unset;
-    padding: 20px;
-}
 .about-section {
     display: flex;
     flex-direction: row;
