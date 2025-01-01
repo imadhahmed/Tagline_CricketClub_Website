@@ -34,7 +34,7 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     margin: 0;
     padding: 0;
 }
@@ -129,6 +129,7 @@ footer {
 .imgBlock{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     gap: 50px;
     align-content: center;
 
@@ -138,6 +139,7 @@ footer {
     height:300px;
     border-radius: 10px;
     box-shadow: 0 2px 2px rgba(6, 1, 1, 0.1);
+    flex-wrap: nowrap;
 }
 
 .image{
@@ -166,9 +168,9 @@ footer {
 
 .matchHeading {
     font-family:Georgia;
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
-    margin: 20px 0,5px,0;
+    margin: 20px 0,3px,0;
 }
 
 .tableContainer {
@@ -179,7 +181,7 @@ footer {
 
 .matchTable {
     border-collapse: collapse;
-    width: 80%;
+    width: 900%;
     background-color: #fcf0f0; 
     margin: 0 auto;
 }
