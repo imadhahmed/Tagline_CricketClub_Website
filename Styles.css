@@ -164,7 +164,7 @@ footer {
         font-size: 25px;
 
     }
-    .teamNameWithLogo{
+    .nav{
         list-style-type: none;
         display: flex;
         justify-content:center;
@@ -173,7 +173,7 @@ footer {
         margin: 0;
         padding: 0;
     }
-    .teamNameWithLogo li {
+    .nav li {
         font-size: 10px;
     }
     .about-section {
