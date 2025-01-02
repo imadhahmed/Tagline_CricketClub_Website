@@ -7,6 +7,69 @@
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="D:\My Projects\Website\pictures\logo.jpg">
+    <style>
+        form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+            font-size: 0.9em;
+            margin-top: -8px;
+        }
+    </style>
 </head>
 <body>
     <div class="Header">
@@ -14,25 +77,119 @@
             <img src="./pictures/logo.jpg" alt="Club Logo">
             <h1>Tagline Cricket Club</h1>
         </header>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="players.html">Players</a></li>
-                <li><a href="Matches.html">Matches</a></li>
-                <li><a href="Achievements.html">Achievements</a></li>
-                <li><a href="Contacts.html">Contacts</a></li>
-                <li><a href="Join.html">Join Us</a></li>
-            </ul>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="players.html">Players</a></li>
+            <li><a href="Matches.html">Matches</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="Contacts.html">Contacts</a></li>
+            <li><a href="Join.html">Join Us</a></li>
+        </ul>
     </div>
     <div class="JoinHead">
-        <h1>Register to Join with Us</h1>
+        <h1>Fill this form to Join with Us</h1>
     </div>
 
-
-
-
-
-    <footer>
-        <p>&copy; 2025 Tagline Sports Club. All rights reserved.</p>
-    </footer>
+    <div>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth (DD/MM/YYYY):</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Cricket Experience</legend>
+                <div class="form-group">
+                    <label>Do you have any prior experience playing cricket? (Yes/No):</label>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="experience" value="yes"> Yes</label>
+                        <label><input type="radio" name="experience" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="details">If yes, please provide details (teams played for, tournaments, achievements):</label>
+                    <textarea id="details" name="details" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Primary Role in the Team (tick one):</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="role" value="batsman"> Batsman</label>
+                        <label><input type="checkbox" name="role" value="bowler"> Bowler</label>
+                        <label><input type="checkbox" name="role" value="allrounder"> All-rounder</label>
+                        <label><input type="checkbox" name="role" value="wicketkeeper"> Wicketkeeper</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Batting Style:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="battingStyle" value="right"> Right-handed</label>
+                        <label><input type="radio" name="battingStyle" value="left"> Left-handed</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Bowling Style:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="bowlingStyle" value="rightFast"> Right-arm Fast</label>
+                        <label><input type="radio" name="bowlingStyle" value="rightMedium"> Right-arm Medium</label>
+                        <label><input type="radio" name="bowlingStyle" value="rightSpin"> Right-arm Spin</label>
+                        <label><input type="radio" name="bowlingStyle" value="leftFast"> Left-arm Fast</label>
+                        <label><input type="radio" name="bowlingStyle" value="leftMedium"> Left-arm Medium</label>
+                        <label><input type="radio" name="bowlingStyle" value="leftSpin"> Left-arm Spin</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Fitness and Availability</legend>
+                <div class="form-group">
+                    <label>Are you currently fit to play cricket? (Yes/No):</label>
+                    <div class="checkbox-group">
+                        <label><input type="radio" name="fit" value="yes"> Yes</label>
+                        <label><input type="radio" name="fit" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Do you have any existing injuries or medical conditions? (Yes/No):</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="injuries" value="yes"> Yes</label>
+                        <label><input type="checkbox" name="injuries" value="no"> No</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="injuryDetails">If yes, please specify:</label>
+                    <textarea id="injuryDetails" name="injuryDetails" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Availability for Practice and Matches:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="availability" value="weekdaysMorning"> Weekdays Morning</label>
+                        <label><input type="checkbox" name="availability" value="weekdaysAfternoon"> Weekdays Afternoon</label>
+                        <label><input type="checkbox" name="availability" value="weekdaysEvening"> Weekdays Evening</label>
+                        <label><input type="checkbox" name="availability" value="weekendsMorning"> Weekends Morning</label>
+                        <label><input type="checkbox" name="availability" value="weekendsAfternoon"> Weekends Afternoon</label>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
