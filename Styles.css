@@ -176,7 +176,7 @@ footer {
 
 .matchHeading {
     font-family: Georgia;
-    letter-spacing: 12px;
+    letter-spacing: 5px;
     font-size: 15px;
     color:rgb(234, 207, 133);
     text-align: center;
@@ -297,7 +297,7 @@ footer {
 
 .achHead{
     font-family: Georgia;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
     font-size: 15px;
     color:rgb(234, 207, 133);
     text-align: center;
@@ -316,7 +316,7 @@ footer {
 
 .contHead {
     font-family: Georgia;
-    letter-spacing: 12px;
+    letter-spacing: 8px;
     font-size: 15px;
     color:rgb(234, 207, 133);
     text-align: center;
@@ -355,7 +355,7 @@ footer {
 
 .JoinHead {
     font-family: Georgia;
-    letter-spacing: 12px;
+    letter-spacing: 6px;
     font-size: 15px;
     color:rgb(234, 207, 133);
     text-align: center;
