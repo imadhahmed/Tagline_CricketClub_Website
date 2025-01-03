@@ -387,8 +387,9 @@ fieldset {
 
 legend {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: rgb(224, 72, 13);
+    font-family: 'Lucida Sans';
 }
 
 .form-group {
@@ -412,7 +413,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 0.9rem;
+    font-size: 12px;
 }
 
 textarea {
@@ -450,5 +451,6 @@ button:hover {
     color: black;
     font-family: 'Gill Sans';
     transition-duration: 0.6s;
+    font-weight: bolder;
 }
 
