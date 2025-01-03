@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
 
     form.addEventListener("submit", (event) => {
-        // Prevent form submission to check validations
         event.preventDefault();
 
         // Clear previous error messages
