@@ -1,27 +1,26 @@
 function validate() {
-    // Get the form object
-    let form = document.forms["appForm"];
+    const form = document.forms["appForm"];
 
-    // List of field names to validate
-    let fields = ["fullName", "dob", "address", "contactNumber", "email","experience","details","injuryDetails"];
+    //Array to store the field names to check for empty values
+    let fields = ["fullName", "dob", "address", "contactNumber", "email","experience","role","battingStyle","bowlingStyle","fit","availability"];
     
-    // Loop through each field and check if it's empty
-    for (let i = 0; i < fields.length; i++) {
+    // Loop for checking every empty field 
+    for (let i = 0; i < fields.length; i++)
+    {  
         let fieldName = fields[i];
-        let fieldValue = form[fieldName].value.trim(); // Trim spaces
-        if (fieldValue === "") {
-            // Show inline error message
+        let fieldValue = form[fieldName].value.trim(); 
+        if (fieldValue === "") 
+        {
             alert(`The ${fieldName.replace(/([A-Z])/g, ' $1')} field must be filled out`);
-            form[fieldName].focus(); // Focus the first invalid field
-            return false; // Stop form submission
+            form[fieldName].focus(); 
+            return false; 
         }
     }
 
-    // Additional validations (e.g., contactNumber, email format)
+    // validate e-mail and contac tnumber
     let contactNumber = form["contactNumber"].value.trim();
     let email = form["email"].value.trim();
-
-    // Validate contact number (e.g., ensure it's numeric and 10 digits)
+    
     if (!/^\d{10}$/.test(contactNumber)) {
         alert("Please enter a valid 10-digit contact number.");
         form["contactNumber"].focus();
