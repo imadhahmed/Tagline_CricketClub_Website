@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Styles.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="./pictures/logo.jpg">
+    <script src="./script.js"></script>
     
 </head>
 <body>
@@ -29,7 +30,7 @@
     </div>
 
     <div>
-        <form  >
+        <form  name="appForm" onsubmit="return validate()" method="post">
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="form-group">
